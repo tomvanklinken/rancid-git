@@ -43,6 +43,10 @@
 # control_rancid $GROUP
 #
 
+# #*@& sort locale!!
+LC_COLLATE="POSIX"
+export LC_COLLATE
+
 # print a usage message to stderr
 pr_usage() {
     echo "usage: $0 [-V] [-r device_name] [-m mail rcpt] group" >&2;
